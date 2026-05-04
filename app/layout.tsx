@@ -1,21 +1,10 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const geist = Geist({
-  subsets: ['latin'],
-  variable: '--font-sans',
-})
-
-const geistMono = Geist_Mono({
-  subsets: ['latin'],
-  variable: '--font-mono',
-})
-
 export const metadata: Metadata = {
   title: 'Arfey Moreno Jazzua - Full Stack Developer',
-  description: 'Full Stack Developer crafting beautiful and performant web applications. Specializing in React, Next.js, TypeScript, and modern web technologies.',
+  description: 'Full Stack Developer yang membangun web app, dashboard bisnis, dan ERP internal seperti JPAS / FitnessPlus System dengan React, Next.js, TypeScript, dan Tailwind CSS.',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -36,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Arfey Moreno Jazzua - Full Stack Developer',
-    description: 'Building digital experiences at the intersection of design and engineering.',
+    description: 'Building digital products at the intersection of design, engineering, and business operations.',
     type: 'website',
   },
 }
@@ -47,8 +36,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geist.variable} ${geistMono.variable} antialiased`}>
+    <html lang="id">
+      <body className="antialiased">
         {children}
         <Analytics />
       </body>

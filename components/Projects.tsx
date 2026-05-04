@@ -6,11 +6,19 @@ import { projects } from '@/lib/data'
 import { ExternalLink, X } from 'lucide-react'
 
 const Projects = () => {
-  const categories = ['web', 'design']
-  const [activeCategory, setActiveCategory] = useState('web')
-  const [selectedProject, setSelectedProject] = useState<typeof projects[0] | null>(null)
+  const categories = ['all', ...new Set(projects.map((project) => project.category))]
+  const [activeCategory, setActiveCategory] = useState('all')
+  const [selectedProject, setSelectedProject] = useState<(typeof projects)[number] | null>(null)
 
-  const filteredProjects = projects.filter((p) => p.category === activeCategory)
+  const categoryLabels: Record<string, string> = {
+    all: 'Semua',
+    web: 'Web',
+    design: 'Desain',
+    erp: 'ERP / Sistem',
+  }
+
+  const filteredProjects =
+    activeCategory === 'all' ? projects : projects.filter((project) => project.category === activeCategory)
 
   return (
     <>
@@ -20,7 +28,7 @@ const Projects = () => {
           <div className="mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Featured Work</h2>
             <p className="text-lg text-foreground/60 max-w-2xl">
-              Pilihan proyek yang telah saya kerjakan, menampilkan keterampilan dan keahlian saya di berbagai domain.
+              Pilihan proyek yang telah saya kerjakan, termasuk sistem ERP internal JPAS / FitnessPlus System untuk operasional bisnis.
             </p>
           </div>
 
@@ -30,13 +38,13 @@ const Projects = () => {
               <button
                 key={category}
                 onClick={() => setActiveCategory(category)}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 capitalize ${
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
                   activeCategory === category
                     ? 'bg-primary text-primary-foreground'
                     : 'bg-card border border-border text-foreground/60 hover:border-primary/50'
                 }`}
               >
-                {category === 'web' ? 'Web' : 'Desain'}
+                {categoryLabels[category] ?? category}
               </button>
             ))}
           </div>
@@ -67,20 +75,20 @@ const Projects = () => {
                   {/* Tags */}
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.tags.map((tag) => (
-                      <span
-                        key={tag}
-                        className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium"
-                      >
-                        {tag}
+                    <span
+                      key={tag}
+                      className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium"
+                    >
+                      {tag}
                       </span>
                     ))}
                   </div>
 
                   {/* Link */}
-                  <button className="inline-flex items-center gap-2 text-primary hover:gap-3 transition-all duration-200 font-medium">
+                  <span className="inline-flex items-center gap-2 text-primary hover:gap-3 transition-all duration-200 font-medium">
                     Lihat Detail
                     <ExternalLink size={16} />
-                  </button>
+                  </span>
                 </div>
               </div>
             ))}
@@ -181,15 +189,21 @@ const Projects = () => {
               </div>
 
               {/* Call to action */}
-              <div className="pt-4">
-                <a
-                  href={selectedProject.link}
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:shadow-lg hover:shadow-primary/30 transition-all duration-200 font-medium"
-                >
-                  Kunjungi Proyek
-                  <ExternalLink size={16} />
-                </a>
-              </div>
+              {selectedProject.link && selectedProject.link !== '#' ? (
+                <div className="pt-4">
+                  <a
+                    href={selectedProject.link}
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:shadow-lg hover:shadow-primary/30 transition-all duration-200 font-medium"
+                  >
+                    Kunjungi Proyek
+                    <ExternalLink size={16} />
+                  </a>
+                </div>
+              ) : (
+                <div className="pt-4 text-sm text-foreground/50">
+                  Demo internal belum dipublikasikan, tetapi detail implementasinya sudah tercantum di atas.
+                </div>
+              )}
             </div>
           </div>
         </div>

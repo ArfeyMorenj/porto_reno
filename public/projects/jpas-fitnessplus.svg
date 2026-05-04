@@ -1,0 +1,88 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="200" y1="40" x2="1400" y2="860" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#050816" />
+      <stop offset="1" stop-color="#0B1538" />
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#111827" />
+      <stop offset="1" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="accent" x1="340" y1="0" x2="1260" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE" />
+      <stop offset="0.5" stop-color="#8B5CF6" />
+      <stop offset="1" stop-color="#F97316" />
+    </linearGradient>
+    <filter id="blur" x="-100" y="-100" width="1800" height="1100" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="55" />
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" rx="40" fill="url(#bg)" />
+  <circle cx="260" cy="150" r="160" fill="#22D3EE" opacity="0.18" filter="url(#blur)" />
+  <circle cx="1330" cy="190" r="180" fill="#8B5CF6" opacity="0.16" filter="url(#blur)" />
+  <circle cx="1180" cy="760" r="220" fill="#F97316" opacity="0.11" filter="url(#blur)" />
+
+  <rect x="48" y="48" width="1504" height="804" rx="28" fill="url(#panel)" stroke="#1F2937" stroke-width="2" />
+
+  <rect x="72" y="72" width="220" height="760" rx="22" fill="#060B1A" stroke="#1F2937" stroke-width="2" />
+  <rect x="100" y="104" width="66" height="66" rx="18" fill="url(#accent)" opacity="0.95" />
+  <rect x="184" y="110" width="92" height="12" rx="6" fill="#E5E7EB" opacity="0.9" />
+  <rect x="184" y="132" width="110" height="8" rx="4" fill="#94A3B8" opacity="0.85" />
+
+  <rect x="94" y="222" width="174" height="44" rx="16" fill="#0F172A" stroke="#2563EB" stroke-width="1.5" />
+  <rect x="94" y="282" width="174" height="36" rx="16" fill="#0B1225" />
+  <rect x="94" y="332" width="174" height="36" rx="16" fill="#0B1225" />
+  <rect x="94" y="382" width="174" height="36" rx="16" fill="#0B1225" />
+  <rect x="94" y="432" width="174" height="36" rx="16" fill="#0B1225" />
+  <rect x="94" y="482" width="174" height="36" rx="16" fill="#0B1225" />
+  <rect x="94" y="532" width="174" height="36" rx="16" fill="#0B1225" />
+  <rect x="94" y="582" width="174" height="36" rx="16" fill="#0B1225" />
+  <rect x="94" y="632" width="174" height="36" rx="16" fill="#0B1225" />
+  <rect x="94" y="682" width="174" height="36" rx="16" fill="#0B1225" />
+
+  <rect x="330" y="92" width="1192" height="92" rx="24" fill="#0A1020" stroke="#1F2937" stroke-width="2" />
+  <text x="366" y="138" fill="#E5E7EB" font-size="34" font-weight="700" font-family="Inter, Arial, sans-serif">JPAS / FitnessPlus System</text>
+  <text x="366" y="166" fill="#94A3B8" font-size="18" font-weight="500" font-family="Inter, Arial, sans-serif">ERP internal dashboard for PT. FITART</text>
+
+  <rect x="330" y="216" width="280" height="172" rx="24" fill="#0A1020" stroke="#1F2937" stroke-width="2" />
+  <rect x="636" y="216" width="280" height="172" rx="24" fill="#0A1020" stroke="#1F2937" stroke-width="2" />
+  <rect x="942" y="216" width="280" height="172" rx="24" fill="#0A1020" stroke="#1F2937" stroke-width="2" />
+  <rect x="1248" y="216" width="274" height="172" rx="24" fill="#0A1020" stroke="#1F2937" stroke-width="2" />
+
+  <circle cx="390" cy="284" r="30" fill="#2563EB" />
+  <circle cx="696" cy="284" r="30" fill="#22C55E" />
+  <circle cx="1002" cy="284" r="30" fill="#A855F7" />
+  <circle cx="1306" cy="284" r="30" fill="#F97316" />
+
+  <text x="438" y="274" fill="#94A3B8" font-size="18" font-weight="500" font-family="Inter, Arial, sans-serif">Total Clients</text>
+  <text x="438" y="320" fill="#F8FAFC" font-size="42" font-weight="700" font-family="Inter, Arial, sans-serif">03</text>
+
+  <text x="744" y="274" fill="#94A3B8" font-size="18" font-weight="500" font-family="Inter, Arial, sans-serif">Products</text>
+  <text x="744" y="320" fill="#F8FAFC" font-size="42" font-weight="700" font-family="Inter, Arial, sans-serif">02</text>
+
+  <text x="1050" y="274" fill="#94A3B8" font-size="18" font-weight="500" font-family="Inter, Arial, sans-serif">Total Invoice</text>
+  <text x="1050" y="320" fill="#F8FAFC" font-size="42" font-weight="700" font-family="Inter, Arial, sans-serif">Rp 0</text>
+
+  <text x="1354" y="274" fill="#94A3B8" font-size="18" font-weight="500" font-family="Inter, Arial, sans-serif">Collection Rate</text>
+  <text x="1354" y="320" fill="#F8FAFC" font-size="42" font-weight="700" font-family="Inter, Arial, sans-serif">0%</text>
+
+  <rect x="330" y="420" width="1192" height="320" rx="28" fill="#060B1A" stroke="#1F2937" stroke-width="2" />
+  <text x="366" y="478" fill="#F8FAFC" font-size="26" font-weight="700" font-family="Inter, Arial, sans-serif">Summary Report</text>
+
+  <rect x="366" y="520" width="1118" height="1" fill="#1F2937" />
+  <rect x="366" y="590" width="1118" height="1" fill="#1F2937" />
+  <rect x="366" y="660" width="1118" height="1" fill="#1F2937" />
+
+  <text x="366" y="558" fill="#94A3B8" font-size="20" font-weight="500" font-family="Inter, Arial, sans-serif">Total Invoice</text>
+  <text x="820" y="558" fill="#F8FAFC" font-size="20" font-weight="600" font-family="Inter, Arial, sans-serif">AR Balance</text>
+  <text x="1364" y="558" fill="#F8FAFC" font-size="20" font-weight="600" font-family="Inter, Arial, sans-serif">Rp 0</text>
+
+  <text x="366" y="628" fill="#94A3B8" font-size="20" font-weight="500" font-family="Inter, Arial, sans-serif">Unpaid Invoice</text>
+  <text x="820" y="628" fill="#F8FAFC" font-size="20" font-weight="600" font-family="Inter, Arial, sans-serif">Collection Rate</text>
+  <text x="1360" y="628" fill="#2563EB" font-size="20" font-weight="700" font-family="Inter, Arial, sans-serif">0%</text>
+
+  <text x="366" y="698" fill="#94A3B8" font-size="20" font-weight="500" font-family="Inter, Arial, sans-serif">Payment Collected</text>
+  <text x="820" y="698" fill="#F8FAFC" font-size="20" font-weight="600" font-family="Inter, Arial, sans-serif">Period</text>
+  <text x="1360" y="698" fill="#F8FAFC" font-size="20" font-weight="700" font-family="Inter, Arial, sans-serif">2026-05</text>
+</svg>

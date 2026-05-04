@@ -1,8 +1,8 @@
 export const profile = {
   name: 'Arfey Moreno Jazzua',
   title: 'Full Stack Developer',
-  subtitle: 'Membangun pengalaman digital yang bermakna',
-  bio: 'Saya mengembangkan solusi elegan di persimpangan desain dan engineering, menciptakan aplikasi yang indah dan performan.',
+  subtitle: 'Membangun sistem digital yang rapi, cepat, dan siap dipakai operasional',
+  bio: 'Saya mengembangkan solusi web dan ERP internal yang menghubungkan desain, engineering, dan alur bisnis nyata ke dalam satu platform yang terstruktur dan mudah digunakan.',
   email: 'morenoreno166@gmail.com',
   location: 'Jakarta, Indonesia',
 }
@@ -176,6 +176,35 @@ export const projects = [
     link: '#',
     category: 'design',
   },
+  {
+    id: 6,
+    title: 'JPAS / FitnessPlus System',
+    description: 'Sistem ERP internal untuk PT. FITART yang memusatkan master data, workflow operasional, invoice, pembayaran, piutang, jurnal, laporan fiskal, dan print center dalam satu dashboard bisnis.',
+    fullDescription: {
+      definition: 'JPAS / FitnessPlus System adalah ERP internal yang saya kembangkan untuk membantu operasional PT. FITART dalam satu platform terpusat. Sistem ini berperan sebagai dashboard bisnis yang menyatukan pengelolaan data master, transaksi, monitoring piutang, pelaporan, dan pencetakan dokumen.',
+      purpose: 'Tujuan utamanya adalah membuat proses bisnis lebih rapi, terstruktur, dan mudah dipantau. Pengguna dapat login, mengakses modul sesuai kebutuhan operasional, menyimpan state halaman terakhir, serta bekerja dengan alur yang dilengkapi loading state, error state, toast notification, dan dialog konfirmasi untuk aksi penting.',
+      implementation: {
+        features: [
+          'Autentikasi login dengan token Bearer dan proteksi halaman',
+          'Dashboard ringkas untuk memantau client, product, invoice, payment, dan AR balance',
+          'Master data untuk client, product, item, bank, team member, company, invoice type, chart of accounts, dan users',
+          'Workflow operasional untuk work order, installation, license, dan stop license',
+          'Modul invoice untuk invoice license dan invoice produk / non-license',
+          'Manajemen pembayaran, posting pembayaran invoice, dan posting omzet',
+          'Monitoring piutang, AR ledger, kartu piutang, detail piutang client, dan piutang berdasarkan item',
+          'Laporan bisnis dan fiskal seperti sales report, register invoice, histori invoice, laporan pajak, VAT, dan fiscal-commercial',
+          'Print center untuk batch invoice, invoice PDF, dan receipt PDF',
+          'Setup sistem untuk pengaturan perusahaan, seri faktur pajak, kode akun, dan mapping rekening',
+          'Recurring invoice untuk generate invoice otomatis per periode',
+        ],
+        technical: 'Dibangun dengan Next.js, React, TypeScript, Tailwind CSS, dan shadcn/ui, lalu terhubung ke backend melalui REST API dengan autentikasi token Bearer. Arsitektur frontend memakai lapisan API terpusat, custom hooks, state management yang bersih, dan UI modular agar mudah dirawat dan dikembangkan.',
+      },
+    },
+    image: '/projects/jpas-fitnessplus.svg',
+    tags: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'shadcn/ui', 'REST API', 'ERP'],
+    link: '#',
+    category: 'erp',
+  },
 
 ]
 
@@ -190,7 +219,7 @@ export const experience = [
       'Menguasai framework Laravel untuk pengembangan API backend',
       'Mengembangkan multiple projects menggunakan Next.js dan React',
       'Mahir dalam desain dan optimasi database MySQL dan PostgreSQL',
-      'Membangun 5+ aplikasi full-stack dengan integrasi frontend-backend lengkap',
+      'Membangun 6+ aplikasi full-stack dengan integrasi frontend-backend lengkap',
       'Mengimplementasikan sistem autentikasi dan RESTful APIs',
       'Mempelajari best practices industri untuk clean code dan arsitektur scalable',
     ],
@@ -295,6 +324,36 @@ export const certificates = [
     description: 'Sertifikat dari MindLuster untuk menyelesaikan kursus tentang cara disable JavaScript menggunakan browser developer tools. Pembelajaran mendalam tentang debugging, browser DevTools, browser features, dan web development tools profesional.',
     link: '#',
     image: '/certificates/javascript-certificate.jpg',
+  },
+  {
+    id: 7,
+    title: 'Fundamental of Assistant Web Developer - DEX - Jawa Timur',
+    issuer: 'Digital Talent Academy',
+    date: '27 April 2026',
+    certificateNo: '21212423840-12/DTA/BLSDM.Komdigi/2026',
+    description: 'Sertifikat pelatihan dari Digital Talent Academy / Digital Talent Scholarship 2026 untuk Fundamental of Assistant Web Developer - DEX - Jawa Timur. Pelatihan berlangsung selama 11.5 jam dan mencakup implementasi user interface, perintah eksekusi bahasa pemrograman berbasis teks/grafik/multimedia, serta penyusunan fungsi dan organisasi file yang rapi.',
+    link: '#',
+    image: '/certificates/fundamental-assistant-web-developer-dta-jawa-timur.png',
+  },
+  {
+    id: 8,
+    title: 'Event Online Free Class - DevOps Zero Downtime',
+    issuer: 'Dibimbing',
+    date: '16 April 2026',
+    certificateNo: 'N/A',
+    description: 'Sertifikat partisipasi event online free class dari Dibimbing dengan tema DevOps "Zero Downtime: Jurus Jitu Update Sistem Raksasa Tanpa Drama Maintenance". Sertifikat ini menandakan partisipasi aktif dalam sesi berbagi praktik terbaik update sistem tanpa downtime.',
+    link: '#',
+    image: '/certificates/devops-zero-downtime-dibimbing.png',
+  },
+  {
+    id: 9,
+    title: 'MySkill Short Class - Website Development: Back End',
+    issuer: 'MySkill',
+    date: '08 April 2026',
+    certificateNo: '315434/WEB/LM/04/2026',
+    description: 'Sertifikat MySkill Short Class untuk Software Engineering dengan topik Website Development: Back End. Sertifikat ini diterbitkan oleh MySkill dan PT LINIMUDA INSPIRASI NEGERI, menandakan penyelesaian kelas pengembangan backend untuk web development.',
+    link: '#',
+    image: '/certificates/myskill-website-development-back-end.png',
   },
 ]
 
