@@ -1,0 +1,65 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#070D18" />
+      <stop offset="0.5" stop-color="#0B1B2E" />
+      <stop offset="1" stop-color="#102B47" />
+    </linearGradient>
+    <linearGradient id="card" x1="380" y1="100" x2="1220" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827" />
+      <stop offset="1" stop-color="#0B1220" />
+    </linearGradient>
+    <linearGradient id="accent" x1="480" y1="160" x2="1180" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22C55E" />
+      <stop offset="0.5" stop-color="#38BDF8" />
+      <stop offset="1" stop-color="#A855F7" />
+    </linearGradient>
+    <filter id="blur" x="-100" y="-100" width="1800" height="1100" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="60" />
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" rx="40" fill="url(#bg)" />
+  <circle cx="240" cy="160" r="170" fill="#22C55E" opacity="0.14" filter="url(#blur)" />
+  <circle cx="1360" cy="170" r="190" fill="#38BDF8" opacity="0.12" filter="url(#blur)" />
+  <circle cx="1220" cy="760" r="220" fill="#A855F7" opacity="0.08" filter="url(#blur)" />
+
+  <rect x="54" y="54" width="1492" height="792" rx="30" fill="url(#card)" stroke="#1F2937" stroke-width="2" />
+
+  <rect x="92" y="92" width="300" height="716" rx="24" fill="#060B16" stroke="#1F2937" stroke-width="2" />
+  <rect x="122" y="122" width="88" height="88" rx="24" fill="url(#accent)" />
+  <text x="144" y="176" fill="#F8FAFC" font-size="34" font-weight="800" font-family="Inter, Arial, sans-serif">BE</text>
+  <rect x="228" y="128" width="138" height="16" rx="8" fill="#E5E7EB" opacity="0.95" />
+  <rect x="228" y="156" width="154" height="10" rx="5" fill="#94A3B8" opacity="0.9" />
+
+  <rect x="122" y="252" width="232" height="46" rx="15" fill="#0B1220" stroke="#22C55E" stroke-width="1.5" />
+  <rect x="122" y="316" width="232" height="46" rx="15" fill="#0B1220" />
+  <rect x="122" y="380" width="232" height="46" rx="15" fill="#0B1220" />
+  <rect x="122" y="444" width="232" height="46" rx="15" fill="#0B1220" />
+  <rect x="122" y="508" width="232" height="46" rx="15" fill="#0B1220" />
+  <rect x="122" y="572" width="232" height="46" rx="15" fill="#0B1220" />
+
+  <rect x="424" y="92" width="1124" height="112" rx="28" fill="#060B16" stroke="#1F2937" stroke-width="2" />
+  <text x="470" y="138" fill="#F8FAFC" font-size="36" font-weight="800" font-family="Inter, Arial, sans-serif">BE Kost - Backend API Booking Kos</text>
+  <text x="470" y="170" fill="#94A3B8" font-size="18" font-weight="500" font-family="Inter, Arial, sans-serif">Laravel 10 REST API with JWT auth, booking, review, and PDF features</text>
+
+  <rect x="424" y="236" width="1124" height="156" rx="28" fill="#07101D" stroke="#1F2937" stroke-width="2" />
+  <text x="468" y="278" fill="#C7D2FE" font-size="18" font-weight="700" font-family="Inter, Arial, sans-serif">API MODULES</text>
+  <rect x="468" y="302" width="168" height="56" rx="18" fill="#0B1220" />
+  <rect x="648" y="302" width="168" height="56" rx="18" fill="#0B1220" />
+  <rect x="828" y="302" width="168" height="56" rx="18" fill="#0B1220" />
+  <rect x="1008" y="302" width="168" height="56" rx="18" fill="#0B1220" />
+  <rect x="1188" y="302" width="168" height="56" rx="18" fill="url(#accent)" opacity="0.92" />
+  <rect x="1368" y="302" width="132" height="56" rx="18" fill="#0B1220" />
+
+  <rect x="424" y="416" width="1124" height="300" rx="28" fill="#050A16" stroke="#1F2937" stroke-width="2" />
+  <text x="468" y="464" fill="#F8FAFC" font-size="28" font-weight="800" font-family="Inter, Arial, sans-serif">Backend Focus</text>
+  <text x="468" y="496" fill="#94A3B8" font-size="18" font-weight="500" font-family="Inter, Arial, sans-serif">Auth, role middleware, kos CRUD, booking flow, review, and PDF nota booking</text>
+
+  <rect x="468" y="536" width="760" height="64" rx="18" fill="#0B1220" />
+  <rect x="468" y="616" width="760" height="64" rx="18" fill="#0B1220" />
+  <rect x="1260" y="536" width="240" height="144" rx="22" fill="#0B1220" />
+  <circle cx="1380" cy="608" r="42" fill="url(#accent)" opacity="0.96" />
+  <path d="M1370 590H1390V628H1370V590ZM1378 598H1382V620H1378V598Z" fill="#F8FAFC" />
+  <path d="M1366 634L1380 620L1394 634H1366Z" fill="#F8FAFC" />
+</svg>

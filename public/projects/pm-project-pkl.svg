@@ -1,0 +1,76 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07101F" />
+      <stop offset="0.45" stop-color="#0E1B36" />
+      <stop offset="1" stop-color="#1B2B4E" />
+    </linearGradient>
+    <linearGradient id="card" x1="420" y1="120" x2="1180" y2="780" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827" />
+      <stop offset="1" stop-color="#0B1120" />
+    </linearGradient>
+    <linearGradient id="accent" x1="420" y1="180" x2="1160" y2="740" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22C55E" />
+      <stop offset="0.5" stop-color="#38BDF8" />
+      <stop offset="1" stop-color="#A855F7" />
+    </linearGradient>
+    <filter id="blur" x="-100" y="-100" width="1800" height="1100" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="60" />
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" rx="40" fill="url(#bg)" />
+  <circle cx="250" cy="150" r="170" fill="#22C55E" opacity="0.16" filter="url(#blur)" />
+  <circle cx="1360" cy="160" r="190" fill="#38BDF8" opacity="0.14" filter="url(#blur)" />
+  <circle cx="1220" cy="770" r="220" fill="#A855F7" opacity="0.10" filter="url(#blur)" />
+
+  <rect x="54" y="54" width="1492" height="792" rx="30" fill="url(#card)" stroke="#1F2937" stroke-width="2" />
+
+  <rect x="92" y="92" width="312" height="716" rx="24" fill="#050A16" stroke="#1F2937" stroke-width="2" />
+  <rect x="122" y="122" width="88" height="88" rx="24" fill="url(#accent)" />
+  <text x="145" y="175" fill="#F8FAFC" font-size="34" font-weight="800" font-family="Inter, Arial, sans-serif">PM</text>
+  <rect x="228" y="128" width="140" height="16" rx="8" fill="#E5E7EB" opacity="0.95" />
+  <rect x="228" y="156" width="156" height="10" rx="5" fill="#94A3B8" opacity="0.9" />
+
+  <rect x="122" y="250" width="252" height="48" rx="15" fill="#0B1220" stroke="#22C55E" stroke-width="1.5" />
+  <rect x="122" y="314" width="252" height="48" rx="15" fill="#0B1220" />
+  <rect x="122" y="378" width="252" height="48" rx="15" fill="#0B1220" />
+  <rect x="122" y="442" width="252" height="48" rx="15" fill="#0B1220" />
+  <rect x="122" y="506" width="252" height="48" rx="15" fill="#0B1220" />
+  <rect x="122" y="570" width="252" height="48" rx="15" fill="#0B1220" />
+
+  <rect x="436" y="92" width="1112" height="112" rx="28" fill="#050A16" stroke="#1F2937" stroke-width="2" />
+  <text x="480" y="138" fill="#F8FAFC" font-size="36" font-weight="800" font-family="Inter, Arial, sans-serif">Project Manager - TM Project PKL</text>
+  <text x="480" y="170" fill="#94A3B8" font-size="18" font-weight="500" font-family="Inter, Arial, sans-serif">Task breakdown for frontend, backend, and UI/UX teams</text>
+
+  <rect x="436" y="236" width="1112" height="304" rx="28" fill="#07101D" stroke="#1F2937" stroke-width="2" />
+  <text x="480" y="284" fill="#C7D2FE" font-size="18" font-weight="700" font-family="Inter, Arial, sans-serif">TASK COORDINATION</text>
+
+  <rect x="480" y="314" width="300" height="164" rx="24" fill="#0B1220" />
+  <rect x="804" y="314" width="300" height="164" rx="24" fill="#0B1220" />
+  <rect x="1128" y="314" width="376" height="164" rx="24" fill="#0B1220" />
+
+  <rect x="510" y="344" width="116" height="34" rx="17" fill="#22C55E" opacity="0.95" />
+  <text x="536" y="367" fill="#06210F" font-size="16" font-weight="800" font-family="Inter, Arial, sans-serif">Frontend</text>
+  <rect x="510" y="394" width="230" height="12" rx="6" fill="#334155" />
+  <rect x="510" y="418" width="200" height="12" rx="6" fill="#334155" />
+  <rect x="510" y="442" width="164" height="12" rx="6" fill="#334155" />
+
+  <rect x="834" y="344" width="116" height="34" rx="17" fill="#38BDF8" opacity="0.95" />
+  <text x="862" y="367" fill="#052235" font-size="16" font-weight="800" font-family="Inter, Arial, sans-serif">Backend</text>
+  <rect x="834" y="394" width="230" height="12" rx="6" fill="#334155" />
+  <rect x="834" y="418" width="192" height="12" rx="6" fill="#334155" />
+  <rect x="834" y="442" width="176" height="12" rx="6" fill="#334155" />
+
+  <rect x="1158" y="344" width="116" height="34" rx="17" fill="#A855F7" opacity="0.95" />
+  <text x="1183" y="367" fill="#1B0F2E" font-size="16" font-weight="800" font-family="Inter, Arial, sans-serif">UI/UX</text>
+  <rect x="1158" y="394" width="300" height="12" rx="6" fill="#334155" />
+  <rect x="1158" y="418" width="260" height="12" rx="6" fill="#334155" />
+  <rect x="1158" y="442" width="210" height="12" rx="6" fill="#334155" />
+
+  <rect x="436" y="570" width="1112" height="166" rx="28" fill="#050A16" stroke="#1F2937" stroke-width="2" />
+  <text x="480" y="622" fill="#F8FAFC" font-size="28" font-weight="800" font-family="Inter, Arial, sans-serif">PM Role Highlights</text>
+  <text x="480" y="662" fill="#94A3B8" font-size="18" font-weight="500" font-family="Inter, Arial, sans-serif">Membagi tugas, memantau progres, dan menjaga koordinasi tim agar deliverable lebih rapi dan terarah.</text>
+  <rect x="480" y="694" width="156" height="38" rx="19" fill="url(#accent)" />
+  <text x="505" y="719" fill="#F8FAFC" font-size="16" font-weight="800" font-family="Inter, Arial, sans-serif">Team Lead</text>
+</svg>

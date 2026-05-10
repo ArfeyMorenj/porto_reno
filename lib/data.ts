@@ -1,3 +1,33 @@
+type GitHubLink = {
+  label: string
+  url: string
+}
+
+type ResourceLink = {
+  label: string
+  url: string
+}
+
+type Project = {
+  id: number
+  title: string
+  description: string
+  fullDescription?: {
+    definition: string
+    purpose: string
+    implementation: {
+      features: string[]
+      technical: string
+    }
+  }
+  image: string
+  tags: string[]
+  link: string
+  category: string
+  githubLinks?: GitHubLink[]
+  resourceLinks?: ResourceLink[]
+}
+
 export const profile = {
   name: 'Arfey Moreno Jazzua',
   title: 'Full Stack Developer',
@@ -40,7 +70,7 @@ export const disciplines = [
   },
 ]
 
-export const projects = [
+export const projects: Project[] = [
   {
     id: 1,
     title: 'MiJurnal - Platform Jurnal Siswa',
@@ -65,6 +95,10 @@ export const projects = [
     tags: ['React.js', 'Laravel', 'MySQL', 'RESTful API', 'Responsive Design'],
     link: '#',
     category: 'web',
+    githubLinks: [
+      { label: 'Frontend GitHub', url: 'https://github.com/ArfeyMorenj/FE_Jurnal' },
+      { label: 'Backend GitHub', url: 'https://github.com/ArfeyMorenj/BE_Jurnal' },
+    ],
   },
   {
     id: 2,
@@ -92,6 +126,10 @@ export const projects = [
     tags: ['React.js', 'Laravel', 'MySQL', 'Authentication', 'Dashboard'],
     link: '#',
     category: 'web',
+    githubLinks: [
+      { label: 'Frontend GitHub', url: 'https://github.com/ArfeyMorenj/FE_MagangManaged' },
+      { label: 'Backend GitHub', url: 'https://github.com/ArfeyMorenj/BE_MagangManaged' },
+    ],
   },
   {
     id: 3,
@@ -119,6 +157,10 @@ export const projects = [
     tags: ['Next.js', 'Laravel 10', 'MySQL', 'JWT', 'PHP 8.1', 'Eloquent ORM'],
     link: '#',
     category: 'web',
+    githubLinks: [
+      { label: 'Frontend GitHub', url: 'https://github.com/ArfeyMorenj/FE_perpustakaan' },
+      { label: 'Backend GitHub', url: 'https://github.com/ArfeyMorenj/BE_perpustakaan' },
+    ],
   },
   {
     id: 4,
@@ -147,6 +189,10 @@ export const projects = [
     tags: ['Next.js', 'Laravel 10', 'MySQL', 'JWT Auth', 'REST API', 'E-Commerce'],
     link: '#',
     category: 'web',
+    githubLinks: [
+      { label: 'Frontend GitHub', url: 'https://github.com/ArfeyMorenj/fe_tokoonline' },
+      { label: 'Backend GitHub', url: 'https://github.com/ArfeyMorenj/be_tokoonline' },
+    ],
   },
   {
     id: 5,
@@ -200,10 +246,100 @@ export const projects = [
         technical: 'Dibangun dengan Next.js, React, TypeScript, Tailwind CSS, dan shadcn/ui, lalu terhubung ke backend melalui REST API dengan autentikasi token Bearer. Arsitektur frontend memakai lapisan API terpusat, custom hooks, state management yang bersih, dan UI modular agar mudah dirawat dan dikembangkan.',
       },
     },
-    image: '/projects/jpas-fitnessplus.svg',
+    image: '/projects/jpas-fitnessplus-erp.jpeg',
     tags: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'shadcn/ui', 'REST API', 'ERP'],
     link: '#',
     category: 'erp',
+    githubLinks: [
+      { label: 'Frontend GitHub', url: 'https://github.com/ArfeyMorenj/projectpkl' },
+      { label: 'Backend GitHub', url: 'https://github.com/ArfeyMorenj/fitart_project' },
+    ],
+  },
+  {
+    id: 7,
+    title: 'Playlist Musik - Next.js Music Library',
+    description: 'Frontend web app playlist musik berbasis Next.js untuk menampilkan daftar playlist, detail lagu, halaman detail dengan video embed, dan alur login/logout sederhana.',
+    fullDescription: {
+      definition: 'Playlist Musik adalah aplikasi frontend berbasis Next.js yang saya kembangkan untuk menampilkan pengalaman mengelola playlist musik dalam bentuk web app yang terstruktur. Aplikasi ini menggabungkan daftar playlist, halaman detail lagu, dashboard user, dan alur login/logout sederhana dalam satu interface yang ringan dan mudah dijelajahi.',
+      purpose: 'Proyek ini dibuat untuk memperlihatkan kemampuan membangun aplikasi React/Next.js yang tidak hanya statis, tetapi juga memiliki alur interaksi lengkap: login, dashboard, browsing playlist, mencari lagu, membuka detail lagu, melihat video embed, dan mengelola data lagu secara sederhana.',
+      implementation: {
+        features: [
+          'Halaman login dengan validasi dan logout sederhana',
+          'Dashboard user untuk navigasi utama aplikasi',
+          'Daftar playlist musik dengan tampilan terstruktur',
+          'Halaman detail playlist untuk melihat daftar lagu',
+          'Pencarian lagu dan fitur tambah lagu',
+          'Halaman detail lagu dengan video embed YouTube',
+          'Tampilan komentar dan likes pada detail lagu',
+          'Routing dinamis untuk playlist dan detail lagu',
+        ],
+        technical: 'Dibangun menggunakan Next.js 15.3.2, React 19, TypeScript, dan Tailwind CSS v4 dengan struktur routing dinamis untuk playlist dan lagu. Proyek ini memakai pendekatan frontend-first untuk memproses data musik, menampilkan detail halaman, dan menghubungkan user flow tanpa backend kompleks.',
+      },
+    },
+    image: '/projects/playlist-music-app.png',
+    tags: ['Next.js', 'React 19', 'TypeScript', 'Tailwind CSS 4', 'Pages Router', 'Routing Dinamis'],
+    link: 'https://github.com/ArfeyMorenj/fe_playlist',
+    category: 'web',
+    githubLinks: [
+      { label: 'Frontend GitHub', url: 'https://github.com/ArfeyMorenj/fe_playlist' },
+    ],
+  },
+  {
+    id: 8,
+    title: 'Project Manager - TM Project PKL',
+    description: 'Peran project management yang membagi tugas ke divisi frontend, backend, dan UI/UX design agar workflow tim lebih terstruktur, jelas, dan mudah dipantau. Termasuk dokumentasi TM PKL 2025 dan TM PKL 2026.',
+    fullDescription: {
+      definition: 'TM Project PKL adalah aktivitas project management yang saya jalankan untuk mengatur pembagian task lintas divisi pada tim pengembangan. Saya berperan sebagai PM yang menyusun prioritas kerja, membagi scope tugas, dan memastikan setiap divisi memiliki arahan yang jelas.',
+      purpose: 'Peran ini menunjukkan kemampuan saya dalam mengelola alur kerja tim, membagi pekerjaan berdasarkan keahlian, menjaga komunikasi antar divisi, dan memastikan hasil pengembangan lebih rapi serta terkoordinasi. Dokumentasinya mencakup TM PKL 2025 dan TM PKL 2026.',
+      implementation: {
+        features: [
+          'Membagi task untuk divisi frontend, backend, dan UI/UX',
+          'Menyusun prioritas pekerjaan berdasarkan kebutuhan sprint',
+          'Memantau status pengerjaan dan progres tiap task',
+          'Menjaga koordinasi antar developer dan designer',
+          'Menyelaraskan kebutuhan fitur dengan pembagian kerja',
+          'Menyusun workflow yang lebih rapi untuk tim proyek',
+        ],
+        technical: 'Dokumentasi kerja dilakukan melalui board tugas dan spreadsheet operasional untuk memastikan setiap anggota tim memahami role, scope, dan deadline. Peran ini menonjolkan kemampuan leadership, koordinasi, dan manajemen proyek dalam konteks pengembangan aplikasi.',
+      },
+    },
+    image: '/projects/tm-pkl-2025.png',
+    tags: ['Project Management', 'Team Coordination', 'Task Breakdown', 'Frontend', 'Backend', 'UI/UX', 'Documentation'],
+    link: '#',
+    category: 'management',
+    resourceLinks: [
+      { label: 'TM PKL 2025', url: 'https://docs.google.com/spreadsheets/d/16B6Bx_Re-Bk8ZYTn3YM-hzLLV5d8bOalH8M-Ia1yjn0/edit?gid=280576956#gid=280576956' },
+      { label: 'TM PKL 2026', url: 'https://docs.google.com/spreadsheets/d/1oK7Rm4jGYcKZ9PIH101i2IPg003fm8vgEZf1GdUSvfI/edit?gid=1802264224#gid=1802264224' },
+    ],
+  },
+  {
+    id: 9,
+    title: 'BE Kost - Backend API Booking Kos',
+    description: 'Backend API Laravel 10 untuk manajemen kos dan booking dengan JWT auth, role owner/society, CRUD kos dan fasilitas, review, balasan review, serta generasi PDF nota booking.',
+    fullDescription: {
+      definition: 'BE Kost adalah backend REST API yang saya bangun untuk manajemen kos dan booking. Fokus utamanya ada pada autentikasi JWT, pengelolaan role owner dan society, serta alur data kos yang bisa dipakai oleh frontend web atau mobile.',
+      purpose: 'Project ini dibuat untuk menampilkan kemampuan membangun backend yang rapi, aman, dan siap dipakai sebagai fondasi aplikasi booking kos. Sistem ini mendukung pengelolaan kos, fasilitas, booking, review, dan cetak nota booking dalam format PDF.',
+      implementation: {
+        features: [
+          'Autentikasi pengguna dengan JWT',
+          'Role-based access control untuk owner dan society',
+          'CRUD kos, fasilitas, dan gambar kos',
+          'Booking kos dengan status approval',
+          'Review kos dan balasan review oleh owner',
+          'Generate PDF nota booking',
+          'Public API untuk melihat data kos',
+          'Filter kos berdasarkan gender, harga, dan ketersediaan',
+        ],
+        technical: 'Dibangun dengan Laravel 10, PHP 8.1, tymon/jwt-auth untuk autentikasi, dan barryvdh/laravel-dompdf untuk generate PDF. Struktur backend memisahkan controller, model, middleware, dan route API agar mudah dikembangkan dan dipelihara.',
+      },
+    },
+    image: '/projects/be-kost-backend-api.svg',
+    tags: ['Laravel 10', 'PHP 8.1', 'JWT Auth', 'REST API', 'PDF Generator', 'Role Middleware'],
+    link: '#',
+    category: 'backend',
+    githubLinks: [
+      { label: 'Backend GitHub', url: 'https://github.com/ArfeyMorenj/be_kost' },
+    ],
   },
 
 ]
@@ -219,7 +355,7 @@ export const experience = [
       'Menguasai framework Laravel untuk pengembangan API backend',
       'Mengembangkan multiple projects menggunakan Next.js dan React',
       'Mahir dalam desain dan optimasi database MySQL dan PostgreSQL',
-      'Membangun 6+ aplikasi full-stack dengan integrasi frontend-backend lengkap',
+      'Membangun 7+ aplikasi full-stack dengan integrasi frontend-backend lengkap',
       'Mengimplementasikan sistem autentikasi dan RESTful APIs',
       'Mempelajari best practices industri untuk clean code dan arsitektur scalable',
     ],

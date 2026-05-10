@@ -9,7 +9,7 @@ interface StatItem {
 }
 
 const stats: StatItem[] = [
-  { label: 'Proyek Selesai', value: 6, suffix: '+' },
+  { label: 'Proyek Selesai', value: 9, suffix: '+' },
   { label: 'Tahun Belajar', value: 3, suffix: '+' },
   { label: 'Skill Dikuasai', value: 30, suffix: '+' },
   { label: 'Tech Stack Items', value: 25, suffix: '+' },

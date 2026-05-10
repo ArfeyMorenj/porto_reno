@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import { projects } from '@/lib/data'
-import { ExternalLink, X } from 'lucide-react'
+import { ExternalLink, Github, X } from 'lucide-react'
 
 const Projects = () => {
   const categories = ['all', ...new Set(projects.map((project) => project.category))]
@@ -13,8 +13,10 @@ const Projects = () => {
   const categoryLabels: Record<string, string> = {
     all: 'Semua',
     web: 'Web',
+    backend: 'Backend / API',
     design: 'Desain',
     erp: 'ERP / Sistem',
+    management: 'PM / Leadership',
   }
 
   const filteredProjects =
@@ -187,6 +189,48 @@ const Projects = () => {
                   ))}
                 </div>
               </div>
+
+              {/* GitHub links */}
+              {selectedProject.githubLinks?.length ? (
+                <div>
+                  <h3 className="text-lg font-semibold mb-3">Lihat Proyek di GitHub</h3>
+                  <div className="flex flex-wrap gap-3">
+                    {selectedProject.githubLinks.map((repo) => (
+                      <a
+                        key={repo.url}
+                        href={repo.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-5 py-3 rounded-lg border border-border bg-background/40 text-foreground hover:border-primary/50 hover:text-primary transition-colors"
+                      >
+                        <Github size={16} />
+                        {repo.label}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              ) : null}
+
+              {/* Resource links */}
+              {selectedProject.resourceLinks?.length ? (
+                <div>
+                  <h3 className="text-lg font-semibold mb-3">Lihat Dokumen Proyek</h3>
+                  <div className="flex flex-wrap gap-3">
+                    {selectedProject.resourceLinks.map((resource) => (
+                      <a
+                        key={resource.url}
+                        href={resource.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-5 py-3 rounded-lg border border-border bg-background/40 text-foreground hover:border-primary/50 hover:text-primary transition-colors"
+                      >
+                        <ExternalLink size={16} />
+                        {resource.label}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              ) : null}
 
               {/* Call to action */}
               {selectedProject.link && selectedProject.link !== '#' ? (

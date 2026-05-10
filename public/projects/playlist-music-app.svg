@@ -1,0 +1,65 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#08111F" />
+      <stop offset="0.45" stop-color="#0B2340" />
+      <stop offset="1" stop-color="#0F3B63" />
+    </linearGradient>
+    <linearGradient id="card" x1="320" y1="140" x2="1280" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A" />
+      <stop offset="1" stop-color="#111827" />
+    </linearGradient>
+    <linearGradient id="accent" x1="470" y1="140" x2="1170" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED" />
+      <stop offset="0.5" stop-color="#06B6D4" />
+      <stop offset="1" stop-color="#22C55E" />
+    </linearGradient>
+    <filter id="blur" x="-100" y="-100" width="1800" height="1100" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="60" />
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" rx="40" fill="url(#bg)" />
+  <circle cx="260" cy="160" r="160" fill="#7C3AED" opacity="0.18" filter="url(#blur)" />
+  <circle cx="1360" cy="180" r="180" fill="#06B6D4" opacity="0.16" filter="url(#blur)" />
+  <circle cx="1180" cy="760" r="220" fill="#22C55E" opacity="0.10" filter="url(#blur)" />
+
+  <rect x="54" y="54" width="1492" height="792" rx="30" fill="url(#card)" stroke="#1F2937" stroke-width="2" />
+
+  <rect x="88" y="88" width="300" height="724" rx="24" fill="#060B16" stroke="#1F2937" stroke-width="2" />
+  <rect x="118" y="120" width="90" height="90" rx="28" fill="url(#accent)" />
+  <circle cx="160" cy="162" r="18" fill="#F8FAFC" opacity="0.9" />
+  <rect x="228" y="126" width="116" height="16" rx="8" fill="#E5E7EB" opacity="0.95" />
+  <rect x="228" y="154" width="144" height="10" rx="5" fill="#94A3B8" opacity="0.95" />
+
+  <rect x="118" y="252" width="232" height="46" rx="15" fill="#0F172A" stroke="#2563EB" stroke-width="1.5" />
+  <rect x="118" y="316" width="232" height="46" rx="15" fill="#0B1220" />
+  <rect x="118" y="380" width="232" height="46" rx="15" fill="#0B1220" />
+  <rect x="118" y="444" width="232" height="46" rx="15" fill="#0B1220" />
+  <rect x="118" y="508" width="232" height="46" rx="15" fill="#0B1220" />
+  <rect x="118" y="572" width="232" height="46" rx="15" fill="#0B1220" />
+  <rect x="118" y="636" width="232" height="46" rx="15" fill="#0B1220" />
+
+  <rect x="424" y="88" width="1124" height="112" rx="28" fill="#060B16" stroke="#1F2937" stroke-width="2" />
+  <text x="470" y="136" fill="#F8FAFC" font-size="36" font-weight="700" font-family="Inter, Arial, sans-serif">Playlist Musik</text>
+  <text x="470" y="168" fill="#94A3B8" font-size="18" font-weight="500" font-family="Inter, Arial, sans-serif">Next.js frontend app for playlists, song details, and dashboard flow</text>
+
+  <rect x="424" y="232" width="1124" height="180" rx="28" fill="#07101C" stroke="#1F2937" stroke-width="2" />
+  <text x="468" y="274" fill="#C7D2FE" font-size="18" font-weight="600" font-family="Inter, Arial, sans-serif">DASHBOARD</text>
+  <rect x="468" y="300" width="180" height="72" rx="20" fill="#111827" />
+  <rect x="664" y="300" width="180" height="72" rx="20" fill="#111827" />
+  <rect x="860" y="300" width="180" height="72" rx="20" fill="#111827" />
+  <rect x="1056" y="300" width="180" height="72" rx="20" fill="#111827" />
+  <rect x="1252" y="300" width="252" height="72" rx="20" fill="url(#accent)" opacity="0.92" />
+
+  <rect x="424" y="436" width="1124" height="308" rx="28" fill="#050A13" stroke="#1F2937" stroke-width="2" />
+  <text x="468" y="482" fill="#F8FAFC" font-size="28" font-weight="700" font-family="Inter, Arial, sans-serif">Demo Lagu dalam Playlist</text>
+  <text x="468" y="514" fill="#94A3B8" font-size="18" font-weight="500" font-family="Inter, Arial, sans-serif">Cari, buka detail, dan lihat video embed pada halaman lagu</text>
+
+  <rect x="468" y="548" width="420" height="58" rx="18" fill="#0B1220" stroke="#334155" stroke-width="1.2" />
+  <rect x="908" y="548" width="180" height="58" rx="18" fill="#3B82F6" />
+  <rect x="468" y="628" width="760" height="80" rx="20" fill="#0B1220" />
+  <rect x="1248" y="548" width="224" height="160" rx="22" fill="#111827" />
+  <circle cx="1360" cy="628" r="40" fill="url(#accent)" opacity="0.95" />
+  <path d="M1348 612L1380 628L1348 644V612Z" fill="#F8FAFC" />
+</svg>
